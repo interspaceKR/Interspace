@@ -1,298 +1,329 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
-    <title>부트스트랩 101 템플릿</title>
-    <link href="cssbootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <!-- Footer Custom style -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/group.css" rel="stylesheet">
+
   </head>
   <body>
-    <!-- 드롭다운 -->
-    <nav id="navbar-example" class="navbar navbar-default navbar-static">
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-      <div class="container-fluid" style="background-color:white">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
         <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Interspace</a>
+          <a class="navbar-brand" href="#" style="font-family:DancingScript-Bold; font-size: 30px; color: #0d3153;">InterSpace</a>
         </div>
-        <div class="collapse navbar-collapse bs-example-js-navbar-collapse">
+        <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
+
             <li class="dropdown">
-              <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                주거공간
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">주거공간<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">종합인테리어</a></li>
+                <li class="divider"></li>
+                <li><a href="#">부분인테리어</a></li>
               </ul>
             </li>
+
             <li class="dropdown">
-              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                상업공간
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">상업공간<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">전체보기</a></li>
+                <li class="divider"></li>
+                <li><a href="#">상가/매장</a></li>
+                <li class="divider"></li>
+                <li><a href="#">카페/식당</a></li>
+                <li class="divider"></li>
+                <li><a href="#">학원/교육</a></li>
+                <li class="divider"></li>
+                <li><a href="#">호텔/펜션</a></li>
+                <li class="divider"></li>
+                <li><a href="#">기타</a></li>
               </ul>
             </li>
-            <li class="dropdown">
-              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                인테리어 소품
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                인테리어팁
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                파트너스
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
-              </ul>
-            </li>
+            <li><a href="#contact">인테리어팁</a></li>
+            <li><a href="#">파트너스</a></li>
+            <li><a href="#contact">이벤트</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li id="fat-menu" class="dropdown">
-              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                고객센터
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
-              </ul>
-            </li>
+            <a href="https://demo.dashboardpack.com/architectui-html-pro/index.html" target="_blank" class="btn btn-warning btn-wide" style="margin-top:8px;">무료견적</a>
+            <a href="https://demo.dashboardpack.com/architectui-html-pro/index.html" target="_blank" class="btn btn-warning btn-wide" style="margin-top:8px;">고객센터</a>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li id="fat-menu" class="dropdown">
-              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                이벤트
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li id="fat-menu" class="dropdown">
-              <a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-                무료견적
-                <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Something else here</a></li>
-                <li role="presentation" class="divider"></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="https://twitter.com/fat">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container-fluid -->
-    </div>
-    </div>
-    </nav>
-    <!-- 드롭다운 -->
-    <!-- 슬라이드 -->
-    <br><br><br>
-    <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-captions" data-slide-to="0" class=""></li>
-        <li data-target="#carousel-example-captions" data-slide-to="1" class="active"></li>
-        <li data-target="#carousel-example-captions" data-slide-to="2" class=""></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#777:#777" alt="900x500" src="img/메인이미지1.jpg" width="100%" data-holder-rendered="true">
-          <div class="carousel-caption">
-            <h3 id="first-slide-label">인테리어 매니지먼트 플랫폼, 공간<a class="anchorjs-link" href="#first-slide-label"><span class="anchorjs-icon"></span></a></h3>
-            <p>00,000 업체에 견적을 비교하는 놀라운 경험</p>
-          </div>
-        </div>
-        <div class="item active">
-          <img data-src="holder.js/900x500/auto/#666:#666" alt="900x500" src="img/메인이미지2.jpg" width="100%" data-holder-rendered="true">
-          <div class="carousel-caption">
-            <h3 id="second-slide-label"><a class="anchorjs-link" href="#second-slide-label"><span class="anchorjs-icon"></span></a></h3>
-            <p></p>
-          </div>
-        </div>
-        <div class="item">
-          <img data-src="holder.js/900x500/auto/#555:#5555" alt="900x500" src="img/메인이미지3.jpg" data-holder-rendered="true">
-          <div class="carousel-caption">
-            <h3 id="third-slide-label">인테리어 매니지먼트 플랫폼, 공간<a class="anchorjs-link" href="#third-slide-label"><span class="anchorjs-icon"></span></a></h3>
-            <p>00,000 업체에 견적을 비교하는 놀라운 경험</p>
-          </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-    <!-- 슬라이드 -->
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
+    </nav>
+    <!--/.nav-collapse -->
+      <div class="container">
+        <!--video-->
+        <video class="bg" data-object-fit="cover" autoplay="" muted="" loop="" width="100%">
+        <source src="img/water - 3967.mp4" type="video/mp4">
+        </video>
+      <!--video-->
+      <!-- Main component for a primary marketing message or call to action -->
+      <!-- Content ment-->
+      <div style="text-align:center; font-size:30px; margin-top: 150px; margin-bottom: 50px;">비용은 최소화하고,<br>만족을 최대화하는 인테리어<br>가능할까요?<br><br>
+        <span style="font-size:20px;">저희는 오늘도 질문의 해답을 찾기위해 달립니다</span><br><br>
+        <span style="color:#D2B48C; font-size:20px;">#무료견적조회 #하자보수서비스 #고객맞춤서비스 #예치금안전설비 #패키지인테리어</span></div>
+      <!-- Content ment -->
+      <!-- four columns of text below the carousel -->
       <div class="row" style="text-align:center; margin-top:50px">
         <div class="col-lg-4">
-          <img class="img-circle" src="img/활동중인파트너.svg" alt="Generic placeholder image" width="140" height="140">
-          <h2>활동중인 파트너</h2>
+          <img class="img-circle" src="img/주거공간icon.svg" alt="Generic placeholder image" width="100" height="100">
+          <h2 style="font-family:DancingScript-Bold;">House</h2>
+          <p>등록된 주거공간은<br>Total 2,000개 입니다.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/상업공간icon.svg" alt="Generic placeholder image" width="100" height="100">
+          <h2 style="font-family:DancingScript-Bold;">Store</h2>
+          <p>등록된 상업공간은<br>Total 2,000개 입니다.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/파트너쉽icon.svg" alt="Generic placeholder image" width="100" height="100">
+          <h2 style="font-family:DancingScript-Bold;">Partner</h2>
           <p>Interspace에서는 1,000명의<br>파트너와 함께하고 있습니다.</p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/등록된자료수.svg" alt="Generic placeholder image" width="140" height="140">
-          <h2>등록된 자료 수</h2>
-          <p>Interspace에 등록된 자료 수는<br>Total 2,000개 입니다.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/방문자수.svg" alt="Generic placeholder image" width="140" height="140">
-          <h2>방문자 수</h2>
-          <p>Interspace에 오신걸 환영합니다<br>현재까지 총 방문자 수는 1,000명 입니다.</p>
-        </div><!-- /.col-lg-4 -->
+        <!-- /.col-lg-4 -->
       </div><!-- /.row -->
-
-      <div class=container>
-        <div class="row" style="margin-top:50px; margin-bottom:0; text-align:center; padding:0px">
-          <div class="col-md-4 col-md-offset-2"><img src="img/예상견적보러가기.jpg" alt="예상견적 보러가기" width="300px"></div>
-          <div class="col-md-4"><img src="img/파트너스신청하기.jpg" alt="파트너스 신청하기" width="300px"></div>
-        </div>
+      <!-- four columns of text below the carousel -->
+      <!-- Content 주거공간 시공 수 -->
+      <div class="col-lg-5">
+      <div class="" style="text-align:center; margin-top:120px;"><h1>TODAY'S BEST <b>HOUSE</b></h1></div>
+      </div>
+      <div class="col-lg-7">
+      <hr class="featurette-divider" style="margin-top:140px; margin-bottom:0px;">
+      </div>
+      <div class="col-lg-7">
+      <hr class="featurette-divider" style="margin-top:40px; margin-bottom:50px; border: 1px solid #ece6d9">
+      </div>
+      <!-- Content 주거공간 시공 수 -->
+      <div class="section_inner">
+        <div class="section_content">
+          <div class="tab_container">
+                <ul class="tab_title">
+                  <li><a href="#tab1" class="selected">전체</a></li>
+                  <li><a href="#tab2">원룸</a></li>
+                  <li><a href="#tab3">주택</a></li>
+                  <li><a href="#tab4">빌라</a></li>
+                  <li><a href="#tab5">아파트</a></li>
+                  <li><a href="#tab6">오피스텔</a></li>
+              </ul>
+              <div class="col-lg-3"></div>
+              <ul class="tab_panel">
+                  <li id="tab1">
+                      <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                      <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                  </li>
+                  <li id="tab2">
+                    <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                    <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                  </li>
+                  <li id="tab3">
+                    <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                    <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                  </li>
+                  <li id="tab4">
+                    <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                    <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                  </li>
+                  <li id="tab5">
+                    <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                    <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                  </li>
+                  <li id="tab6">
+                    <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                    <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                  </li>
+              </ul>
+          </div>
+      	</div>
+      </div>
+      <div class="col-lg-10">
+      <hr class="featurette-divider" style="margin-top:100px; margin-bottom:0px;">
+      </div>
+      <div class="col-lg-2">
+      <div class="" style="text-align:right; margin-top:80px;"><h3>SHOW MORE</h3></div>
+      </div>
+      <!-- Content 주거공간 시공 수 -->
       </div>
 
-      <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">영화 속 같은 공간, <span class="text-muted">Space like a movie</span></h2><br>
-          <p class="lead">영화&드라마 속의 로맨틱한 분위기의 "공간"
-            <br>당신은 어떤 영화를 찍고 계신가요?<br>
-            <br>여러분들을 아름다운 영화 속 주인공으로
-            <br>만들어드리는 "공간매니지먼트X파트너스"<br>
-            <br><span style="color:brown">#카페 #신혼집 #예술 #음악 #로맨틱</span>
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="img/영화속같은공간.jpg" data-holder-rendered="true">
-        </div>
+
+<div class="container">
+  <!-- Content 상업공간 시공 수 -->
+  <div class="">
+  <div class="col-lg-7">
+  <hr class="featurette-divider" style="margin-top:40px; margin-bottom:0px;">
+  </div>
+
+  <div class="col-lg-5">
+  <div class="" style="text-align:left; margin-top:20px;"><h1>TODAY'S BEST <b>STORE</b></h1></div>
+  </div>
+  <!-- Content 상업공간 시공 수 -->
+  <div class="section_inner"  style="margin-Top:200px">
+  <div class="section_content">
+    <div class="tab_container,nav navbar-nav navbar-right">
+        <ul class="tab_title1" style="margin-right:12px; margin-top:50px">
+            <li><a href="#tab7" class="selected">전체</a></li>
+            <li><a href="#tab8">상가/매장</a></li>
+            <li><a href="#tab9">카페/식당</a></li>
+            <li><a href="#tab10">학원/교육</a></li>
+            <li><a href="#tab11">호텔/펜션</a></li>
+            <li><a href="#tab12">기타</a></li>
+        </ul>
       </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">살아 숨쉬는 공간, <span class="text-muted">Living space</span></h2><br>
-          <p class="lead">자연에서 답을 찾다!
-            <br>자연을 담은 당신을 위한 힐링공간<br>
-            <br>살아숨쉬는 나만의 House
-            <br>"공간매니지먼트X파트너스"가 함께합니다<br>
-            <br><span style="color:green">#단독주택 #가족 #팬션 #리조트 #별장</span>
-          </p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="img/살아숨쉬는공간.jpg" data-holder-rendered="true">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">사진을 내 공간으로<span class="text-muted">One Click Interior</span></h2><br>
-          <p class="lead">어려운 인테리어는 이제 그만
-            <br>사진 속 인테리어를 가져오다 <br>
-            <br>무료 견적 비교, 시공 관리 및 하자 보수까지
-            <br>"공간매니지먼트"에서 함께합니다<br>
-            <br><span style="color:pink">#Zero수수료 # #간편인테리어 #안심인테리어 #One Click</span>
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="img/사진을내공간으로.jpg" data-holder-rendered="true">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>© 2014 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
-
+        <ul class="tab_panel1">
+            <li id="tab7">
+                <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+                <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+            </li>
+            <li id="tab8" style="display: none;">
+              <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+              <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+            </li>
+            <li id="tab9" style="display: none;">
+              <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+              <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+            </li>
+            <li id="tab10" style="display: none;">
+              <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+              <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+            </li>
+            <li id="tab11" style="display: none;">
+              <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+              <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+            </li>
+            <li id="tab12" style="display: none;">
+              <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+              <div class="tab_image"><img src="img/아파트,33평,더샵.png" alt=""><img src="img/아파트,35평,아이누리.png" alt=""><img src="img/별장,15평.png" alt=""></div>
+            </li>
+        </ul>
     </div>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5d5cd8aeeb1a6b0be608876d/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
+	</div>
+</div>
+
+<div class="col-lg-2">
+<div class="" style="text-align:right; margin-top:80px;"><h3>SHOW MORE</h3></div>
+</div>
+<div class="col-lg-10">
+<hr class="featurette-divider" style="margin-top:100px; margin-bottom:0px;">
+</div>
+</div>
+  <!-- Content 상업공간 시공 수 -->
+  <!-- Content 부분인테리어 -->
+
+  <div class="" style="background-color:white">
+<div class="" style="background-color: white; margin-top:130px">
+<div class="container">
+<p class="" style="text-align:center; font-size:40px; margin-top:30px">새로운 공간의 탄생 <b>부분 인테리어</b></p><br>
+<div class="">
+  <a href="주거공간/부분인테리어.html"><img src="img/부분_거실.png" alt="" width=16%></a>
+  <a href="주거공간/부분인테리어.html"><img src="img/부분_침실.png" alt="" width=16%></a>
+  <a href="주거공간/부분인테리어.html"><img src="img/부분_욕실.png" alt="" width=16%></a>
+  <a href="주거공간/부분인테리어.html"><img src="img/부분_주방.png" alt="" width=16%></a>
+  <a href="주거공간/부분인테리어.html"><img src="img/부분_샷시.png" alt="" width=16%></a>
+  <a href="주거공간/부분인테리어.html"><img src="img/부분_드레스룸.png" alt="" width=16%></a>
+</div>
+</div>
+</div>
+<!-- Content 부분인테리어 -->
+<!--회사소개-->
+<div class="container" style="margin-top:100px">
+  <div class="col-lg-4">
+    <hr class="featurette-divider" style="margin-top:40px; margin-bottom:0px;">
+  </div>
+    <div class="col-lg-4">
+    <div class="" style="text-align:center; margin-top:20px; font-family:DancingScript-Bold;"><h1><b>IinterSpace STORY</b></h1></div>
+  </div>
+  <div class="col-lg-4">
+    <hr class="featurette-divider" style="margin-top:40px; margin-bottom:0px;">
+  </div>
+</div>
+<!--회사소개-->
+<div class="container" style="margin-top:50px">
+  <div class="col-lg-4">
+    <img src="img/event1.png" alt="" width="100%">
+  </div>
+  <div class="col-lg-8">
+    <img src="img/event2.png" alt="" width="100%">
+  </div>
+  <div class="col-lg-8">
+    <img src="img/event3.png" alt="" width="100%">
+  </div>
+</div>
+<!--회사소개-->
+  <div class="container">
+    <div class="" style="margin-bottom:350px; margin-top:100px; line-height:200%">
+      <div class="col-lg-6">
+        <div class="col-lg-6">
+          대표이사<br>
+          사업자등록증<br>
+          통신판매번호<br>
+          회사주소</div>
+        <div class="col-lg-6">
+          김수환<br>
+          345-1111-111<br>
+          2019-대전-00000호<br>
+          34520 대전광역시 동구 대학로 62, <br>산학협력관
+        </div>
+      </div>
+      <div class="col-lg-6" style="border-left:1px solid #0d3153; text-align:right;">
+        <h1>1588-1111</h1><br>
+        상담가능시간: 월-금 오전9:00-오후6.00<br>
+        이메일: interspace.kr@gmail.com<br>
+        Copyright&copy;Interspace all rights reserved
+      </div>
+    </div>
+  </div>
+</div>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5d5cd8aeeb1a6b0be608876d/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
 <!--End of Tawk.to Script-->
-    <!-- 스크립트 -->
+<!-- /container -->
+
+<!-- Footer(하단 고정) -->
+<footer class="footer">
+	<div class="container">
+		<p class="text-muted">
+      <h2 style="text-align:center; color: #0d3153"><span><b>무료견적 보러가기</b></span> / <span><b>파트너스 신청하기</b></span></h2>
+    </p>
+	</div>
+</footer>
+<!--/ Footer(하단 고정) -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="jsbootstrap/bootstrap.min.js"></script>
-    <!-- 스크립트 -->
-  </body>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/group.js"></script>
+
+</body>
 </html>
